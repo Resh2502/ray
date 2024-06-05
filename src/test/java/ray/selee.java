@@ -47,9 +47,7 @@ public class selee {
 		 WebDriverWait Wait= new WebDriverWait(x,Duration.ofSeconds(25));
 		 WebElement until =Wait.until(ExpectedConditions.presenceOfElementLocated(By.id("mail")));
 		 until.sendKeys("resh");*/
-		 
-		 
-		 x.navigate().to("https://demo.guru99.com/test/web-table-element.php");
+		
 		 WebElement table =x.findElement(By.xpath("//table[@class=\"dataTable\"]"));
 				 List<WebElement> tr = table.findElements(By.tagName("tr"));
 				 for(int i=0; i<tr.size(); i++) {
